@@ -149,7 +149,7 @@ hr {
     margin: 0 15px;
     position: relative;
 
-    color: #a89880;
+    color: #333;
     text-decoration: none;
 
     transition: color .1s linear;
@@ -161,7 +161,7 @@ hr {
     width: 100%;
     height: 3px;
 
-    background-color: #a89880;
+    background-color: #333;
     opacity: 0;
 
     position: absolute;
@@ -173,7 +173,7 @@ hr {
 }
 
 .nav__link:hover {
-    color: #a69172;
+    color: #333;
 }
 
 .nav__link:hover:after,
@@ -182,7 +182,7 @@ hr {
 }
 
 .nav__link.active {
-    color: #a69172;
+    color: #333;
 }
 
 
@@ -214,7 +214,7 @@ hr {
     width: 100%;
     height: 3px;
 
-    background-color: #a89880;
+    background-color: #ab9c87;
 
     position: absolute;
     top: 0;
@@ -236,7 +236,7 @@ hr {
     width: 100%;
     height: 3px;
 
-    background-color: #a89880;
+    background-color: #ab9c87;
 
     position: absolute;
     left: 0;
@@ -1076,7 +1076,7 @@ hr {
 
 
 
-/* Footer */
+
 .footer {
     padding-top: 65px;
 
@@ -1085,12 +1085,12 @@ hr {
 
 .footer__inner {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-wrap: none;
+    justify-content: center;
     margin: 0 -15px;
     padding-bottom: 65px;
 }
-
+ /*
 .footer__col {
     padding: 0 15px;
 }
@@ -1164,7 +1164,7 @@ hr {
     color: #333;
     text-transform: uppercase;
 }
-
+*/
 
 
 /* Blogs */
@@ -1433,7 +1433,8 @@ hr {
         top: 100%;
         left: 0;
 
-        background-color: #eb8b8d;
+        background-color: #ab9c87;
+        color: black;
     }
 
     .nav.active {
@@ -1684,7 +1685,7 @@ hr {
 
     .subscribe__input {
         margin-bottom: 10px;
-        border-right: 1px solid #e7e7e7;
+        border-right: 1px solid #ab9c87;
     }
 
     .subscribe__input,
@@ -1692,11 +1693,32 @@ hr {
         width: 100%;
     }
 
+
+.footer {
+    padding-top: 65px;
+}
+
+}
+
+.footer_inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    min-height: 820px;
+    position: relative;
 }
 
 .btnb {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: center;
     padding: 8px 30px;
 
     border: 5px solid #a69172;
@@ -1709,7 +1731,9 @@ hr {
 
     transition: background .1s linear, color .1s linear;
 
-    margin-left: 500px;
+    text-align: center;
+
+    display: flex;
 }
 
 .btnb:hover {
